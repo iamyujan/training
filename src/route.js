@@ -1,7 +1,8 @@
 import Home from './Components/Home'
 import About from './Components/About'
 import Contact from './Components/Contact'
-import Services from './Components/Services';
+import Todos from './Components/Todos';
+import Todo from './Components/Todo';
 
 const route = [
     {
@@ -20,8 +21,13 @@ const route = [
         exact: false
     },
     {
-        path: '/services',
-        component: Services,
+        path: '/todos',
+        component: Todos,
+        exact: false
+    },
+    {
+        path: '/todo/:id',
+        component: Todo,
         exact: false
     }
 ]

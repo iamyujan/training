@@ -9,9 +9,9 @@ export default class App extends Component {
             <Router>
                 <Switch>
                     {
-                        routes.map((route)=> {
+                        routes.map((route, i)=> {
                             return(
-                                <Route exact={route.exact} path={route.path} component={route.component}/>
+                                <Route key={i} exact={route.exact} path={route.path} component={route.component}/>
                             )
                         })
                     }

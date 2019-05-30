@@ -1,3 +1,38 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background: #f2f2f2;
+    margin: 0;
+}
+.wrapper{
+    padding: 0 15px;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-item{
+    line-height: 60px;
+    border: 1px solid #ddd;
+    max-width: 50%;
+    margin: 10px 0;
+    background: $bg;
+    padding: 0 15px;
+    border-radius: 5px;
+    span{
+        cursor: pointer;
+    }
+    span.delete{
+        margin-right: 40px;
+        cursor: pointer;
+        color: $primary;
+    }
+    span.completed{
+        text-decoration: line-through;
+        font-weight: bold;
+    }
 }
